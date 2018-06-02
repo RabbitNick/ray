@@ -19,7 +19,7 @@ case $key in
     OUTPUT_SHA=YES
     ;;
     *)
-    echo "Usage: build-docker.sh [ --no-cache ] [ --skip-examples ] [ --sha-sums ]"
+    echo "Usage: build-docker.sh [ --no-cache ] [ --skip-examples ] [ --output-sha ]"
     exit 1
 esac
 shift
