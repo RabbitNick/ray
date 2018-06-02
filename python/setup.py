@@ -77,7 +77,7 @@ class build_ext(_build_ext.build_ext):
         # version of Python to build pyarrow inside the build.sh script. Note
         # that certain flags will not be passed along such as --user or sudo.
         # TODO(rkn): Fix this.
-        #subprocess.check_call(["../build.sh", "-p", sys.executable])
+        subprocess.check_call(["../build.sh", "-p", sys.executable])
         
 
         # We also need to install pyarrow along with Ray, so make sure that the
