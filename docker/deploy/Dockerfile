@@ -6,7 +6,6 @@ ADD ray.tar /ray
 ADD git-rev /ray/git-rev
 WORKDIR /ray/python
 RUN pip install --upgrade pip
-#RUN pip install --upgrade setuptools
-RUN ls /opt/conda/bin/ 
+RUN ../build.sh -p /opt/conda/bin/python 
 RUN pip install -e . --verbose
 WORKDIR /ray
