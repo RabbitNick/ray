@@ -6,6 +6,8 @@ ADD ray.tar /ray
 ADD git-rev /ray/git-rev
 WORKDIR /ray/python
 RUN pip install --upgrade pip
+RUN pwd
+RUN ls -l ../
 RUN ../build.sh  
 RUN pip install -e . --verbose
 WORKDIR /ray
