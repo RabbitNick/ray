@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/env
+
+
 set -x
 
 # Cause the script to exit if a single command fails.
